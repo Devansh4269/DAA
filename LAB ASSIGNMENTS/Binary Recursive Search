@@ -1,0 +1,25 @@
+BINARY RECURSIVE SEARCH 
+int binarySearch(int A[],int l,int r,int key)
+int falg=0;
+while(r>=l)
+{
+int mid=l+(r-l)/2;
+}
+if(A[mid]==key)
+{
+flag=1;
+return mid;
+}
+if (key>A[mid])
+ { 
+ binarySearch(A[],mid+1,r, key)
+}
+else
+  {
+  binarySearch(A[],l,mid-1,key)
+      }
+      if(flag==0)
+      print("Element not found")
+else
+print("Element Found")
+}
